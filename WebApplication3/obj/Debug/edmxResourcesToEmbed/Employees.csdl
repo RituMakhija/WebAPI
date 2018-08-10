@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SLKDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="registration">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="SlNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="SLKDatabaseEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="registrations" EntityType="Self.registration" />
+  </EntityContainer>
+</Schema>

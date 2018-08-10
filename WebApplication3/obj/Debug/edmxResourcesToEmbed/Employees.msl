@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SLKDatabaseModelStoreContainer" CdmEntityContainer="SLKDatabaseEntities1">
+    <EntitySetMapping Name="registrations">
+      <EntityTypeMapping TypeName="SLKDatabaseModel.registration">
+        <MappingFragment StoreEntitySet="registration">
+          <ScalarProperty Name="SlNo" ColumnName="SlNo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

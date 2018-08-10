@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SLKDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="registration">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="SlNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="20" />
+    <Property Name="EmailId" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
+    <Property Name="ConfirmPassword" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="SLKDatabaseModelStoreContainer">
+    <EntitySet Name="registration" EntityType="Self.registration" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
